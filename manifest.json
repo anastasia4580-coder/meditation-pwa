@@ -2,20 +2,21 @@
   "name": "Пространство для медитации",
   "short_name": "Медитация",
   "description": "Техники медитации и дыхательные практики для начинающих",
-  "start_url": "/index.html",
+  "start_url": "/meditation-pwa/index.html",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#F5F0EB",
   "background_color": "#FFFFFF",
+  "categories": ["lifestyle", "health", "meditation"],
   "icons": [
     {
-      "src": "/icons/icon-512.png",
+      "src": "/meditation-pwa/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "/meditation-pwa/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
