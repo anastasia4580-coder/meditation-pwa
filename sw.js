@@ -1,20 +1,20 @@
 const CACHE_NAME = 'meditation-pwa-v1';
 
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/techniques.html',
-    '/script.js',
-    '/manifest.json',
-    '/img/avatar.jpg',
-    '/img/sunset.jpg',
-    '/img/meditation.jpg',
-    '/img/yoga.jpg',
-    '/img/vipassana.jpg',
-    '/img/telo.png',
-    '/img/mantra.png',
-    '/icons/icon-192.png',
-    '/icons/icon-512.png'
+    '/meditation-pwa/',
+    '/meditation-pwa/index.html',
+    '/meditation-pwa/techniques.html',
+    '/meditation-pwa/script.js',
+    '/meditation-pwa/manifest.json',
+    '/meditation-pwa/icons/icon-192.png',
+    '/meditation-pwa/icons/icon-512.png',
+    '/meditation-pwa/img/avatar.jpg',
+    '/meditation-pwa/img/sunset.jpg',
+    '/meditation-pwa/img/meditation.jpg',
+    '/meditation-pwa/img/yoga.jpg',
+    '/meditation-pwa/img/vipassana.jpg',
+    '/meditation-pwa/img/telo.png',
+    '/meditation-pwa/img/mantra.png'
 ];
 
 self.addEventListener('install', function(event) {
