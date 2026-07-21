@@ -110,6 +110,50 @@
             color: #888888;
             font-size: 14px;
         }
+        /* Стили для кнопок уведомлений */
+        .push-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #FAF7F0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .push-section h3 {
+            margin-bottom: 15px;
+            color: #333333;
+        }
+        .btn-subscribe {
+            padding: 10px 25px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn-subscribe:hover {
+            background: #45a049;
+        }
+        .btn-unsubscribe {
+            padding: 10px 25px;
+            background: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: none;
+        }
+        .btn-unsubscribe:hover {
+            background: #d32f2f;
+        }
+        .push-status {
+            margin-top: 10px;
+            color: #999;
+        }
+        .push-status.active {
+            color: #4CAF50;
+        }
         @media (max-width: 900px) {
             .row {
                 flex-direction: column;
@@ -173,6 +217,11 @@
     </div>
 </div>
 
+<!-- ПОДКЛЮЧАЕМ script.js -->
 <script src="script.js"></script>
+
+<!-- ПОДКЛЮЧАЕМ push.js -->
+<script src="push.js"></script>
+
 </body>
 </html>
