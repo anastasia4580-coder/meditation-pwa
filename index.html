@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пространство для медитации</title>
+    
+    <!-- PWA Meta -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/icons/icon-192.png">
+    <meta name="theme-color" content="#F5F0EB">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #F5F0EB;
+            margin: 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        .row {
+            display: flex;
+            gap: 30px;
+        }
+        .sidebar {
+            width: 30%;
+            background: #FAF7F0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .sidebar img {
+            width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            font-size: 20px;
+            color: #333333;
+        }
+        .sidebar p {
+            color: #555555;
+            line-height: 1.5;
+        }
+        .sidebar ul {
+            padding-left: 20px;
+            color: #444444;
+        }
+        .sidebar h3 {
+            color: #333333;
+        }
+        .content {
+            width: 70%;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+            margin-right: 15px;
+            padding: 5px 10px;
+            background: #EEEEEE;
+            border-radius: 5px;
+        }
+        .menu a.active {
+            background: #333333;
+            color: #FFFFFF;
+        }
+        .menu a:hover {
+            background: #CCCCCC;
+        }
+        .post {
+            border-bottom: 2px solid #EEEEEE;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .post img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .post h1 {
+            font-size: 24px;
+            color: #333333;
+        }
+        .post h2 {
+            font-size: 20px;
+            color: #333333;
+        }
+        .post p {
+            color: #444444;
+            line-height: 1.6;
+        }
+        .meta {
+            color: #888888;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 2px solid #EEEEEE;
+            color: #888888;
+            font-size: 14px;
+        }
+        @media (max-width: 900px) {
+            .row {
+                flex-direction: column;
+            }
+            .sidebar, .content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+
+        <div class="sidebar">
+            <img src="img/avatar.jpg" alt="Фото">
+            <h2>Обо мне</h2>
+            <p>Я практикую медитацию больше 10 лет. Помогаю людям найти покой и гармонию. Делюсь техниками, которые работают.</p>
+            <h3>Направления</h3>
+            <ul>
+                <li>Дыхательные практики</li>
+                <li>Медитации для начинающих</li>
+                <li>Глубокие созерцания</li>
+                <li>Утренние ритуалы</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="menu">
+                <a href="index.html" class="active">Главная</a>
+                <a href="techniques.html">Техники</a>
+            </div>
+
+            <div class="post">
+                <h1>МЕДИТАЦИЯ НА РАССВЕТЕ</h1>
+                <p class="meta">Практика • 27 мая 2026</p>
+                <img src="img/sunset.jpg" alt="Рассвет">
+                <p>
+                    Начните день с 10-минутной практики. Сядьте удобно, закройте глаза, следите за дыханием. 
+                    Наблюдайте, как солнечный свет наполняет вас энергией и спокойствием.
+                </p>
+            </div>
+
+            <div class="post">
+                <h2>ДЫХАНИЕ КВАДРАТОМ</h2>
+                <p class="meta">Техника • 19 июня 2026</p>
+                <img src="img/meditation.jpg" alt="Медитация">
+                <p>
+                    Техника "Квадратное дыхание" успокаивает ум за 5 минут. 
+                    Вдох на 4 счета, задержка на 4, выдох на 4, задержка на 4. 
+                    Повторите 5-10 раз и почувствуете расслабление.
+                </p>
+            </div>
+
+            <footer>
+                © 2026 Пространство для медитации
+            </footer>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
